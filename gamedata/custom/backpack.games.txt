@@ -1,0 +1,380 @@
+"Games"
+{
+	"nmrih"
+	{
+		"Signatures"
+		{
+			"CBaseEntity::SUB_StartFadeOut"
+			{
+				// void (float, bool)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\xD9\xEE\x56\x57\x6A\x00\x51********\x8B\xF9**********\x6A\x00\x51\x8B\xCF*****\xF3\x0F\x58\x45\x08****************************************\x85\xD2**\x2B\xC8\x51\x8B\xCA******************\x3A\x01**\x8B\xCF***************\x85\xD2*****\x2B\xC1\x8B\xCA\x50"
+				"linux" "@_ZN11CBaseEntity16SUB_StartFadeOutEfb"
+			}
+
+			"CBaseEntity::SetCollisionGroup"
+			{
+				// void (int)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x53\x8B\x5D\x08\x56\x57\x8B\xF9**************\x8D\x4D\x08\x3B\x01**\x8B\xCF*********************\x5F\x5E\x5B\x5D\xC2\x04\x00***\x85\xD2********\x2B\xC1\x8B\xCA\x50***********\x8B\xCF*****\x5F\x5E\x5B\x5D\xC2\x04\x00"
+				"linux" "@_ZN11CBaseEntity17SetCollisionGroupEi"
+			}
+
+			"CNMRiH_WeaponRegistry::GetWeapon"
+			{
+				// weapon_registration_s * (int) const
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x83\xEC\x18*****\x33\xC5\x89\x45\xFC\x56\x8B\xF1\x8D\x45\xE8\x57\x8B\x7D\x08\x50***\x89\x7D\xE8*****\x0F\xB7\xC0\xB9\xFF\xFF\x00\x00\x66\x3B\xC1*********\x2B\xC8***\x5F\x5E\x8D\x04\x88\x83\xC0\x0C\x8B\x4D\xFC\x33\xCD*****\x8B\xE5\x5D\xC2\x04\x00\x57***********\x8B\x4D\xFC***\x83\xC4\x08\x33\xCD\x5F\x5E*****\x8B\xE5\x5D\xC2\x04\x00"
+				"linux" "@_ZNK21CNMRiH_WeaponRegistry9GetWeaponEi"
+			}
+
+			"CBaseCombatCharacter::Weapon_OwnsThisType"
+			{
+				// bool (const char *, bool)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x51\x53\x8B\x5D\x08\x8B\xC1\x56\x57***\x33\xFF******\x8B\x16\x83\xFA\xFF*******\x8B\xCA\x81\xE1\xFF\x0F\x00\x00\xC1\xEA\x0C\x03\xC9*************************\x33\xC9*****\x53*****\x84\xC0**\x8B\x16\x83\xFA\xFF*******\x8B\xCA\x81\xE1\xFF\x0F\x00\x00\xC1\xEA\x0C\x03\xC9************\x33\xC9\x8B\x01***********\x47\x83\xC6\x04*****\x5F\x5E\x33\xC0\x5B\x8B\xE5\x5D\xC2\x08\x00"
+				"linux" "@_ZNK20CBaseCombatCharacter19Weapon_OwnsThisTypeEPKci"
+			}
+
+			"CNMRiH_Player::HasEnoughInventoryRoomForWeapon"
+			{
+				// bool (CBaseCombatWeapon *)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x56\x57\x8B\xF1*****\x8B\x16\x8B\xF8\x03\xBE****\x8B\xCE\x8B\x92****\xFF\xD2\x84\xC0**\x83\xC7\x32*****\x8B\x4D\x08\x8B\x70*\x8B\x01******\x03\xC7\x5F\x3B\xC6\x5E**\xA1**********\x32\xC0\x5D\xC2\x04\x00"
+				"linux" "@_ZN13CNMRiH_Player31HasEnoughInventoryRoomForWeaponEP17CBaseCombatWeapon"
+			}
+
+			"CNMRiH_Player::GetCarriedWeight"
+			{
+				// int ()
+				"library" "server"
+				"windows" "\x56\x57\x8B\xF1*****\x8B\x16\x8B\xF8\x03\xBE****\x8B\xCE\x8B\x92****\xFF\xD2\x84\xC0\x8D\x47***\x8B\xC7\x5F\x5E\xC3"
+				"linux" "@_ZN13CNMRiH_Player16GetCarriedWeightEv"
+			}
+
+			"CNMRiH_Player::GetWeightSpeedFactor"
+			{
+				// float (void)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x51*****\x56\x57\x8B\xF1****************************\x8B\x16\x8B\xF8******\x8B\xCE******\xFF\xD2\x84\xC0**\x83\xC7\x32*****\xF3\x0F\x2A\xC7***********\x5F\x5E***\x8B\xE5\x5D\xC3\x8B\xCE*****\x8B\x16\x8B\xF8******\x8B\xCE\x89\x7D\xFC******\xFF\xD2\x84\xC0**\x83\xC7\x32\x89\x7D\xFC*****\xDB\x45\xFC*********\xD9\xC9*****\xDF\xF1\xDD\xD8**********\x5F\x5E\x8B\xE5\x5D\xC3"
+				"linux" "@_ZN13CNMRiH_Player20GetWeightSpeedFactorEv"
+			}
+
+			"CItem_InventoryBox::AddItem"
+			{
+				// void (const char*)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x83\xEC\x14\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\x56\x8B\x75\x08"
+				"linux" "@_ZN18CItem_InventoryBox7AddItemEPKc"
+			}
+
+			"CItem_InventoryBox::EndUseForAllPlayers"
+			{
+				// void ()
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x83\xEC\x2C\x8B\xD1\x53*********\x4B************\x56***\x57\x8B\x01******\x85\xF6*********\x33\xC0\x85\xD2******\x8B\x09\x39\x31**\x40\x83\xC1\x04\x3B\xC2*******\x85\xC0******\x56**********\x84\xC0************\x83\xFA\xFF*******\x8B\xCA*********\x03\xC9*************\x8B\xCE***************\x85\xD2********\x2B\xC1\x8B\xCA\x50"
+				"linux" "@_ZN18CItem_InventoryBox19EndUseForAllPlayersEv"
+			}
+
+			"CItem_InventoryBox::EndUseForPlayer"
+			{
+				// void (CBasePlayer *)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x83\xEC\x20\x53\x56\x8B\x75\x08\x8B\xD9\x85\xF6************\x33\xC0\x85\xD2**************\x8D\x49\x00\x39\x31**\x40\x83\xC1\x04\x3B\xC2**\x5E\x5B\x8B\xE5\x5D\xC2\x04\x00\x85\xC0******\x56**********\x84\xC0************\x57\x83\xFA\xFF*******\x8B\xCA\x81\xE1\xFF\x0F\x00\x00\xC1\xEA\x0C\x03\xC9\x39\x54\xC8\x08*********\x8B\xCE"
+				"linux" "@_ZN18CItem_InventoryBox15EndUseForPlayerEP11CBasePlayer"
+			}
+
+			"CItem_InventoryBox::RemoveItem"
+			{
+				// void (ItemCategories::category_e  const&, int)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x8B\x45\x08\x56\x8B\xF1\x8B\x00\x48**\x48**\x48**\x8B\x45\x0C\x83\xF8\x07***************\x8B\x45\x0C\x83\xF8\x03***************\x8B\x45\x0C\x83\xF8\x07****************************\xD9\xEE\x6A\x01\x51********\x8B\xCE*****\x5E\x5D\xC2\x08\x00"
+				"linux" "@_ZN18CItem_InventoryBox10RemoveItemERKN14ItemCategories10category_eEi"
+			}
+
+			"CItem_InventoryBox::PlayerTakeItems"
+			{
+				// void (CBasePlayer *, int, int, int)
+				"library" "server"
+				"windows" "\x55\x8B\xEC\x8B\x45\x0C\x56\x8B\xF1\x57\x8B\x7D\x08\x83\xF8\xFF**\x50\x8D\x45\x0C\xC7\x45\x0C\x01\x00\x00\x00\x50\x57*****\x8B\x45\x10\x83\xF8\xFF**\x50\x8D\x45\x0C\xC7\x45\x0C\x02\x00\x00\x00\x50\x57\x8B\xCE*****\x8B\x45\x14\x83\xF8\xFF**\x50\x8D\x45\x0C\xC7\x45\x0C\x03\x00\x00\x00\x50\x57\x8B\xCE*****\x57\x8B\xCE*****\x5F\x5E\x5D\xC2\x10\x00"
+				"linux" "@_ZN18CItem_InventoryBox15PlayerTakeItemsEP11CBasePlayeriii"
+			}
+
+			"CItem_AmmoBox::FallInit"
+			{
+				// void ()
+				"library" "server"
+				"windows" "\x56\x8B\xF1\x57\x8B\x06*********************\x6A\x00\x6A\x00\x83\xC8\x08\x8B\xCE\x50\x6A\x02*****\x85\xC0**\x50\x6A\x05\x8B\xCE*****\x6A\x02************************\x83\xC8\x08\x50*****\x6A\x02\x8B\xCE*****\x6A\x22\x8B\xCE*****\xD9\xEE\x6A\x00\x51********\x8B\xCE**********\x6A\x00\x51\x8B\xCE***********************\x5F\x5E\xC3"
+				"linux" "@_ZN13CItem_AmmoBox8FallInitEv"
+			}
+
+			"CItem_AmmoBox::FallThink"
+			{
+				// void ()
+				"library" "server"
+				"windows" "\xA1****\x56\x6A\x00\x51*****\x8B\xF1******************\x8B*****\x85\xC9**\x8B\x01\x8B\x40\x08\xFF\xD0**\x8A*****\x24\x01\x84\xC0**\x6A\x02\x8B\xCE*****\xD9\xEE\x6A\x00\x51***\x6A\x00\x8B\xCE*****\x5E\xC3"
+				"linux" "@_ZN13CItem_AmmoBox9FallThinkEv"
+			}
+
+			"CNMRiH_WeaponBase::FallInit"
+			{
+				// void ()
+				"library" "server"
+				"windows" "\x56\x8B\xF1************\x8B\xCE**************\x6A\x14*****\x5E\xC3\x6A\x22*****\x5E\xC3"
+				"linux" "@_ZN15CNMRiH_BaseItem8FallInitEv"
+			}
+
+			"CNMRiH_WeaponBase::FallThink"
+			{
+				// void ()
+				"library" "server"
+				"windows" "\x56\x8B\xF1************\x8B\xCE**************\x6A\x14*****\x5E\xC3\x6A\x22*****\x5E\xC3"
+				"linux" "@_ZN17CNMRiH_WeaponBase9FallThinkEv"
+			}
+
+			"CNMRiHFlareProjectile::Explode"
+			{
+				// void ()
+				"windows" "\x55\x8B\xEC\x83\xEC\x2C\x56\x57\x8B\xF9******************************\xA8\x01*******\x8B\x45\xF4******\x6A\x00\x83\xEC\x0C\x8B\xCC\x83\xEC\x0C\x89\x01\x8B\x45\xF8\x89\x41\x04\x8B\x45\xFC\x89\x41\x08\x8B\xCC\x8B\x06*****\x89\x01\x8B\x46\x04\x89\x41\x04\x8B\x46\x08\x89\x41\x08***********\x83\xC4\x20\xC1\xE8\x0B\xA8\x01**\x8B\xCF"
+				"linux" "@_ZN21CNMRiHFlareProjectile7ExplodeEv"
+			}
+
+			"CNMRiHFlareProjectile::SignalChopper"
+			{
+				// void ()
+				"windows" "\x55\x8B\xEC\x83\xEC\x64\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\x56\x68"
+				"linux" "@_ZN21CNMRiHFlareProjectile13SignalChopperEv"
+			}
+		}
+
+		"Functions"
+		{
+			"CBaseEntity::SUB_StartFadeOut"
+			{
+				"signature" "CBaseEntity::SUB_StartFadeOut"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+					"delay"
+					{
+						"type" "float"
+					}
+					"notSolid"
+					{
+						"type" "bool"
+					}
+				}
+			}
+
+			"CItem_AmmoBox::FallInit"
+			{
+				"signature" "CItem_AmmoBox::FallInit"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+				}
+			}
+
+			"CItem_AmmoBox::FallThink"
+			{
+				"signature" "CItem_AmmoBox::FallThink"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+				}
+			}
+
+			"CNMRiH_WeaponBase::FallInit"
+			{
+				"signature" "CNMRiH_WeaponBase::FallInit"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+				}
+			}
+
+			"CBaseCombatWeapon::FallInit"
+			{
+				"offset" "CBaseCombatWeapon::FallInit"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+				}
+			}
+
+			"CBaseCombatWeapon::FallThink"
+			{
+				"offset" "CBaseCombatWeapon::FallThink"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+				}
+			}
+
+			"CNMRiHFlareProjectile::Explode"
+			{
+				"signature" "CNMRiHFlareProjectile::Explode"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+				}
+			}
+
+			"CItem_InventoryBox::PlayerTakeItems"
+			{
+				"signature" "CItem_InventoryBox::PlayerTakeItems"
+				"callconv" "thiscall"
+				"return" "void"
+				"this" "entity"
+				"arguments"
+				{
+					"player"
+					{
+						"type" "cbaseentity"
+					}
+					"weapon"
+					{
+						"type" "int"
+					}
+					"gear"
+					{
+						"type" "int"
+					}
+					"ammo"
+					{
+						"type" "int"
+					}
+				}
+			}
+
+			"CNMRiH_Player::GetWeightSpeedFactor"
+			{
+				"signature" "CNMRiH_Player::GetWeightSpeedFactor"
+				"callconv" "thiscall"
+				"return" "float"
+				"this" "entity"
+				"arguments"
+				{
+				}
+			}
+		}
+
+		"Offsets"
+		{
+			"CBaseEntity::IsBaseCombatWeapon"
+			{
+				// bool ()
+				"windows" "87"
+				"linux" "88"
+			}
+
+			"CSDKPlayer::m_iPlayerState"
+			{
+				"windows" "4792"
+				"linux" "4812"
+			}
+
+			// ================================================================
+			// Weapon
+
+			"CBaseCombatWeapon::GetWeight"
+			{
+				// int () const
+				"windows" "318"
+				"linux" "319"
+			}
+
+			"CBaseCombatWeapon::FallInit"
+			{
+				// void ()
+				"windows" "349"
+				"linux" "350"
+			}
+
+			"CBaseCombatWeapon::FallThink"
+			{
+				// void ()
+				"windows" "350"
+				"linux" "351"
+			}
+
+			// ================================================================
+			// Ammo
+
+			"CItem_AmmoBox::m_nAmmoType"
+			{
+				"windows" "1144"
+				"linux" "1164"
+			}
+
+			"CItem_AmmoBox::SetAmmoType"
+			{
+				// void (char *)
+				"windows" "220"
+				"linux" "221"
+			}
+
+			"CItem_AmmoBox::SetAmmoCount"
+			{
+				// void (int)
+				"windows" "221"
+				"linux" "222"
+			}
+
+			"CItem_AmmoBox::GetMaxAmmo"
+			{
+				// int ()
+				"windows" "222"
+				"linux" "223"
+			}
+
+			"CItem_AmmoBox::GetAmmoData"
+			{
+				// FileAmmoInfo_t ()
+				"windows" "224"
+				"linux" "225"
+			}
+
+			// ================================================================
+			// Inventory box
+
+			"CItem_InventoryBox::m_nItemCount"
+			{
+				"windows" "1812"
+				"linux" "1832"
+			}
+
+			"CItem_InventoryBox::m_AmmoArray"
+			{
+				"windows" "1864"
+				"linux" "1884"
+			}
+
+			"CItem_InventoryBox::m_GearArray"
+			{
+				"windows" "1848"
+				"linux" "1868"
+			}
+
+			"CItem_InventoryBox::m_WeaponArray"
+			{
+				"windows" "1816"
+				"linux" "1836"
+			}
+		}
+	}
+}
